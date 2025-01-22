@@ -67,10 +67,10 @@ Copyright end */
       var countDiv = document.createElement('div');
       countDiv.setAttribute('class', element.id);
       if ($scope.currentTheme === 'light') {
-        countDiv.setAttribute('style', 'color: ' + countColor + '; font-size: 16px;font-family:' + fontFamily + ';');
+        countDiv.setAttribute('style', 'color: ' + countColor + '; font-weight: bold; font-size: 16px;font-family:' + fontFamily + ';');
       }
       else {
-        countDiv.setAttribute('style', 'color: ' + countColor + '; font-size: 16px;font-family:' + fontFamily + ';');
+        countDiv.setAttribute('style', 'color: ' + countColor + '; font-weight: bold; font-size: 16px;font-family:' + fontFamily + ';');
       }
       countDiv.innerHTML = element.count;
       labelElem.appendChild(countDiv);

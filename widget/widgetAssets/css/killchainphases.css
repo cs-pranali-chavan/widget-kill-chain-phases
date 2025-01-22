@@ -1,0 +1,10 @@
+/* Copyright start
+    MIT License
+    Copyright (c) 2025 Fortinet Inc
+Copyright end */
+
+/* SVG styles for responsive scaling */
+.svgContainer object {
+  width: 100%; /* SVG width will scale to fill the container */
+  height: 100%; /* SVG height will scale to fill the container */
+}
