@@ -1,5 +1,6 @@
 {
     "killchainphases": {
+        "ERROR_NO_INFORMATION_AVAILABLE": "정보를 사용할 수 없습니다",
         "HEADER_ADD_KILL_CHAIN_PHASES": "킬 체인 단계 추가",
         "HEADER_EDIT_KILL_CHAIN_PHASES": "킬 체인 단계 편집",
         "LABEL_KILL_CHAIN_PHASES_JSON": "킬 체인 단계 JSON"

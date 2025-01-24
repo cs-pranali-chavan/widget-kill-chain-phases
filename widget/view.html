@@ -2,6 +2,7 @@
     MIT License
     Copyright (c) 2025 Fortinet Inc
 Copyright end -->
+
 <div class="widget widget-container chart">
     <div class="display-flex-space-between margin-chart">
         <div class="padding-right-0 padding-left-0 widget-dashboard-title-width"
@@ -15,8 +16,11 @@ Copyright end -->
         </div>
     </div>
     <div data-ng-hide="collapsed">
-        <div id="svg-container" class="svgContainer padding-top-xlg">
-            <object class="padding-left-40 padding-bottom-lg"
+        <div data-ng-if="noData" class="font-09em padding-lg">
+            <span class="noInformation">{{viewWidgetVars.ERROR_NO_INFORMATION_AVAILABLE}}</span>
+        </div>
+        <div id="svg-container" class="svgContainer">
+            <object class="padding-bottom-lg"
                 data="{{svgPath}}"
                 id="topkillChainStagesSVG" alt="kill chain stages"></object>
         </div>

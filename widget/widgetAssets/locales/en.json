@@ -1,5 +1,6 @@
 {
     "killchainphases": {
+        "ERROR_NO_INFORMATION_AVAILABLE": "No information available",
         "HEADER_ADD_KILL_CHAIN_PHASES": "Add Kill Chain Phases",
         "HEADER_EDIT_KILL_CHAIN_PHASES": "Edit Kill Chain Phases",
         "LABEL_KILL_CHAIN_PHASES_JSON": "Kill Chain Phases JSON"

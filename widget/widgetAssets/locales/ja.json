@@ -1,5 +1,6 @@
 {
     "killchainphases": {
+        "ERROR_NO_INFORMATION_AVAILABLE": "情報が利用できません",
         "HEADER_ADD_KILL_CHAIN_PHASES": "キルチェーンフェーズを追加",
         "HEADER_EDIT_KILL_CHAIN_PHASES": "キルチェーンフェーズを編集",
         "LABEL_KILL_CHAIN_PHASES_JSON": "キルチェーンフェーズ JSON"

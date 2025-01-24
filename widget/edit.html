@@ -21,13 +21,50 @@ Copyright end -->
                 <input id="title" name="title" type="text" class="form-control" data-ng-model="config.title" required>
                 <div data-cs-messages="killchainForm.title"></div>
             </div>
-            <div>
+            <div class="col-md-6 padding-right-0">
+                <div class="radio form-group">
+                  <label><input id="JsonField" name="JsonField" type="radio" data-ng-model="config.moduleType"
+                      data-ng-change="onChangeModuleType()" value="Summary Data">&nbsp;&nbsp;Record Containing JSON Data</label>
+                  <span data-uib-tooltip="It shows the aggregate count of the IOC"
+                    data-tooltip-append-to-body="true"><i class="icon icon-information font-Size-13"></i></span>
+                </div>
+                <div class="radio form-group">
+                  <label><input id="accrossModules" name="accrossModules" type="radio" data-ng-model="config.moduleType"
+                      data-ng-change="onChangeModuleType()" value="Highlight Data">&nbsp;&nbsp;Get Live Data</label>
+                  <span data-uib-tooltip="It highlights the current phases of the IOC"
+                    data-tooltip-append-to-body="true"><i class="icon icon-information font-Size-13"></i></span>
+                </div>
+              </div>
+            </div>
+            <!-- Radio Button End -->
+            <div data-ng-if="config.moduleType === 'Summary Data'">
                 <div class="form-group"
                     data-ng-class="{ 'has-error': killchainForm.killchainData.$invalid && killchainForm.killchainData.$touched }">
                     <label for="killchainData" class="control-label">{{viewWidgetVars.LABEL_KILL_CHAIN_PHASES_JSON}}<span class="text-danger">*</span></label>
                     <div id="killchainData" data-cs-json-editor data-options="jsoneditorOptions" data-on-change="setkillchainData"
                         data-json="config.killchainDataJson" class="jinja-json-editor"></div>
                     <div data-cs-messages="killchainForm.killchainData"></div>
+                </div>
+            </div>
+            <div data-ng-if="config.moduleType === 'Highlight Data'">
+                <div class="form-group"
+                    data-ng-class="{ 'has-error': killchainForm.resource.$invalid && killchainForm.resource.$touched }"
+                    data-ng-if="modules">
+                    <label for="resource" class="control-label">{{'COMPONENTS.VIEW_TEMPLATES.WIDGETS.CHART.DATA_SOURCE' |
+                        translate}}<span class="text-danger">*</span></label>
+                    <select name="resource" id="resource" class="form-control"
+                        data-ng-options="module.type as module.name for module in modules" data-ng-model="config.resource" required
+                        data-ng-change="loadAttributes()">
+                        <option value="">{{'APP.LABEL.SELECT_AN_OPTION' | translate}}</option>
+                    </select>
+                    <div data-cs-messages="killchainForm.resource"></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="resourceField">{{'COMPONENTS.CODE_EDITOR.FIELD' | translate}} <span class="text-danger">*</span></label>
+                    <select class="form-control" name="resourceField" id="resourceField"
+                      data-ng-options="field.name as field.title for field in resourceField" ng-model="config.resourceField" required>
+                      <option value="">{{'COMPONENTS.FILTER.CONDITIONAL.SELECT_A_FIELD' | translate}}</option>
+                    </select>
                 </div>
             </div>
         </div>

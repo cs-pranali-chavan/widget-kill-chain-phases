@@ -8,10 +8,7 @@
     "metadata": {
         "description": "Show count of Indicator kill chain phases",
         "pages": [
-            "Dashboard",
-            "View Panel",
-            "Reports",
-            "Listing"
+            "View Panel"
         ],
         "certified": "Yes",
         "publisher": "Fortinet",
