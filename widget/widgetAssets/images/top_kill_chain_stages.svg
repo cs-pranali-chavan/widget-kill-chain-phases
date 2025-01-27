@@ -7,6 +7,7 @@
   height: 90px;
   border-radius:50%;
   box-shadow: 0 0 20px #FFF, 0 0 20px #32776d;
+  -moz-box-shadow: 0 0 20px #FFF, 0 0 20px #32776d;
 }
 </style>
 <g id="Frame 427319194">

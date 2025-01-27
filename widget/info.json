@@ -6,7 +6,7 @@
     "published_date": 1731487820,
     "releaseNotes": "unavailable",
     "metadata": {
-        "description": "Show count of Indicator kill chain phases",
+        "description": "Kill chain phases widget shows the IOC count present for different stages of cyber attack. It highlights the stage of the selected IOC.",
         "pages": [
             "View Panel"
         ],
@@ -16,7 +16,8 @@
             "7.6.1"
         ],
         "category": [
-            "Threat Intelligence"
+            "Threat Intelligence",
+            "Vulnerability and Risk Management"
         ]
     },
     "development": false
