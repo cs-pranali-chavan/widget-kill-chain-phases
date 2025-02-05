@@ -1,12 +1,12 @@
 {
-    "name": "heatmap",
-    "title": "Heatmap",
-    "subTitle": "Heatmap widget creates division of data using different color codes",
+    "name": "killchainphases",
+    "title": "Kill Chain Phases",
+    "subTitle": "Indicator kill chain phases",
     "version": "1.0.0",
-    "published_date": 1733726076,
+    "published_date": 1731487820,
     "releaseNotes": "unavailable",
     "metadata": {
-        "description": "A heatmap widget is used to visually represent data where values are depicted by color, allowing users to quickly identify patterns and trends across multiple variables by seeing which areas on a grid have the highest concentration of a specific value",
+        "description": "Kill chain phases widget shows the IOC count present for different stages of cyber attack. It highlights the stage of the selected IOC.",
         "pages": [
             "View Panel"
         ],
