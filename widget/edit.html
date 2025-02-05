@@ -40,7 +40,7 @@ Copyright end -->
             <div data-ng-if="config.moduleType === 'Summary Data'">
                 <div class="form-group"
                     data-ng-class="{ 'has-error': killchainForm.killchainData.$invalid && killchainForm.killchainData.$touched }">
-                    <label for="killchainData" class="control-label">{{viewWidgetVars.LABEL_KILL_CHAIN_PHASES_JSON}}<span class="text-danger">*</span></label>
+                    <label for="killchainData" class="control-label">{{viewWidgetVars.LABEL_KILL_CHAIN_PHASES_JSON}}</label>
                     <div id="killchainData" data-cs-json-editor data-options="jsoneditorOptions" data-on-change="setkillchainData"
                         data-json="config.killchainDataJson" class="jinja-json-editor"></div>
                     <div data-cs-messages="killchainForm.killchainData"></div>
